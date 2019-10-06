@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  ip-echo:
+    image: poma/ip-echo
+    environment:
+      # VIRTUAL_HOST: ip.tornado.cash
+      # LETSENCRYPT_HOST: ip.tornado.cash
+      VIRTUAL_HOST: ip.poma.in
+      LETSENCRYPT_HOST: ip.poma.in
+
+networks:
+  default:
+    external:
+      name: frontend_default
