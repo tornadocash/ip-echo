@@ -2,7 +2,7 @@ version: '2'
 
 services:
   ip-echo:
-    image: poma/ip-echo
+    image: peppersec/ip-echo
     environment:
       # VIRTUAL_HOST: ip.tornado.cash
       # LETSENCRYPT_HOST: ip.tornado.cash

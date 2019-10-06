@@ -4,7 +4,7 @@ const cors = require('cors')
 const app = express()
 const port = 3000
 
-app.use(cors());
+app.use(cors())
 
 app.get('/', (req, res) => {
 	const ip = req.headers['x-real-ip'] || req.connection.remoteAddress
