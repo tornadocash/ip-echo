@@ -7,10 +7,11 @@ services:
     environment:
       # VIRTUAL_HOST: ip.tornado.cash
       # LETSENCRYPT_HOST: ip.tornado.cash
+      # VIRTUAL_PORT: 3000
       VIRTUAL_HOST: ip.tornado.cash
       LETSENCRYPT_HOST: ip.tornado.cash
 
-# networks:
-#   default:
-#     external:
-#       name: frontend_default
+networks:
+  default:
+    external:
+      name: frontend_default
