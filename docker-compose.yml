@@ -2,14 +2,15 @@ version: '2'
 
 services:
   ip-echo:
+    restart: always
     image: peppersec/ip-echo
     environment:
       # VIRTUAL_HOST: ip.tornado.cash
       # LETSENCRYPT_HOST: ip.tornado.cash
-      VIRTUAL_HOST: ip.poma.in
-      LETSENCRYPT_HOST: ip.poma.in
+      VIRTUAL_HOST: ip.tornado.cash
+      LETSENCRYPT_HOST: ip.tornado.cash
 
-networks:
-  default:
-    external:
-      name: frontend_default
+# networks:
+#   default:
+#     external:
+#       name: frontend_default
